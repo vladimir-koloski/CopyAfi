@@ -13,24 +13,28 @@ let RoomatesDb = {
             .then(res => res.json())
             .then(data => {     
               console.log(data);           
-              // roomates = data;
+              roomates = data;
               let selectedLocation =document.getElementById("seconddropdown").options[selectLocation.selectedIndex].text;
-              let selectedRoomateOrAparment =document.getElementById("firstdropdown").options[selectRoomateOrApartment.selectedIndex].text;
-              // console.log(selectedLocation);
+              let selectedRoomateOrAparment =document.getElementById("firstdropdown").options[selectRoomateOrApartment.selectedIndex].value;
+              console.log(selectedLocation);
+              console.log(selectedRoomateOrAparment);
+              console.log(String(data[0].preferences.doYouHaveSpace));
               roomatesList = filterRoomates(data, selectedLocation, selectedRoomateOrAparment);
               console.log(roomatesList, "filtered list ");
-              pagination();         
-              
-              
+              pagination();                    
             })
             .catch(error => console.log(error));
     },
 };
 
 function filterRoomates(roomates, selectedLocation, selectedRoomateOrAparment){
-  return roomates.filter(r => selectedLocation === r.preferences.roomQuestions[0].region && 
-    selectedRoomateOrAparment == String(roomate.preferences.doYouHaveSpace));
-  
+  if(selectedLocation === "Локација"){
+    return roomates.filter(r => selectedRoomateOrAparment == String(r.preferences.doYouHaveSpace)
+    );
+  }
+  return roomates.filter(r => selectedLocation === r.preferences.roomQuestions[0].region
+    && selectedRoomateOrAparment == String(r.preferences.doYouHaveSpace)
+  );  
 }
 
 
@@ -76,7 +80,7 @@ function pagination (){
 
 // RoomatesDb.getAll();
 
-setTimeout(function(){console.log(roomates)}, 10000);
+//setTimeout(function(){console.log(roomates)}, 10000);
 
 console.log(roomatesList);
 

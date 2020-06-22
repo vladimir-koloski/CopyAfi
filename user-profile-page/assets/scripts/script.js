@@ -25,8 +25,5 @@ for (let i = 0; i < navBarLinks.length; i++) {
   });
 }
 
-let fullName = document.getElementById('fullName').value;
-let checkBox = document.getElementById('checkBox');
-
 
 
