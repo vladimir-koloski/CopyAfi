@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="./style/DinPRO/DINPro-Black.otf">
   <link href="style/user-profile-assets/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> 
    <link rel="stylesheet" href="style/user-profile-assets/user-profile-style.css">
-  <link rel="stylesheet" href="./style/user-profile-assets/user-profile-style.css">
-  <link rel="stylesheet" href="./style/najava.css">
+  <link rel="stylesheet" href="./style/user-profile-assets/user-profile-style.css"> -->
   <link rel="stylesheet" href="./registration-page/style.css">
   <link rel="stylesheet" href="./SearchedCardsPage/styleKartica.css"> 
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./Login-page/najava.css">
 </head>
 
 
@@ -28,21 +28,21 @@
     
         <div class="top-buttons" id="reg">
               <img src="./SearchedCardsPage/Images/roommates_logo_white.svg" class="logo">
-              <a onclick="location.href ='Login-page/najava.html'" type="button" id="najava" class="kopche-najava">Најави се</a>
+              <a type="button" id="najava" class="kopche-najava">Најави се</a>
               <a onclick="location.href='registration-page/registration-page.html'" type="button" id="registriraj" class="kopche-registriraj">Регистрирај се</a>
         </div>
         
             <div class="search" id="cccc">
-              <h1 class="text-insearchbox">Најди цимер по мерка.</h1>
+              <h1 class="text-insearchboxx">Најди цимер по мерка.</h1>
     
     
               <select  id="firstdropdown"class="btn btn-secondar dropdown-toggle"  role="button" id="dropdownMenuLink"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="selected">
              
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <option class="dropdown-item"  value = "1" >Барам цимер со простор</option>
-                  <option class="dropdown-item"  value ="apatmentSelect">Барам простор</option>
-                  <option class="dropdown-item"  value ="0">Барам цимер</option>
+                  <option class="dropdown-item"  value = "true" >Барам цимер со простор</option>
+                  <option class="dropdown-item"  value ="apartmentSelect">Барам простор</option>
+                  <option class="dropdown-item"  value ="false">Барам цимер</option>
                 </div>
               </select>
     
@@ -51,27 +51,15 @@
               
              
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <option class="dropdown-item"  value ="Центар" >Локација</option>
+                  <option class="dropdown-item"  value ="all" >Локација</option>
                   <option class="dropdown-item"  value ="Центар" >Центар</option>
                   <option class="dropdown-item"  value ="Карпош">Карпош</option>
                   <option class="dropdown-item"  value ="Кисела Вода">Кисела Вода</option>
                 </div>
               </select>
-    
-    <!-- 
-              <div class="dropdown2">
-                
-                <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <button class="btn btn-secondary-2 dropdown-toggle" type="button" id="dropdownMenuButtons"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Локација</button>
-                  <option class="dropdown-item" href="#">Карпош</option>
-                  <option class="dropdown-item" href="#">Кисела Вода</option>
-                  <option class="dropdown-item" href="#">Центар</option>
-                </select>
-              </div> -->
+ 
               <li><a href="#" id = "search-btn" class="btn btn-light-search" >Најди</a></li>
               <!-- <button type="button" onclick="GetSelectedValue()">Get Selected Value</button> -->
-    
     
               <!-- <p id="result"></p>
     
@@ -83,10 +71,10 @@
           <div class="wrapper" >
           </div>
         </div> -->
-      
-          
+
+          <div class="allhouses">
                   <!-- House Cards -->
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 203.89 171.94"><defs>
               <clipPath id="House"> 
               <style>.cls-1{fill:none;stroke:#ab2176;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -98,7 +86,7 @@
             </svg>
     
     
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+          <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
             <clipPath id="House">
     
             <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -112,7 +100,7 @@
     
         </svg>   
         
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+        <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
           <clipPath id="House">
     
           <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -124,7 +112,7 @@
     
         <image  class ="imageinhouse"width="210" height="200" xlink:href=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKhY13rebw8JNfsCXC0kYPYBu5t6jhRSYR7QJblfUhfz4YOLZI&usqp=CAU" clip-path="url(#House)" />
     
-      </svg>   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+      </svg>   <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
         <clipPath id="House">
     
         <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -136,7 +124,7 @@
     
       <image  class ="imageinhouse"width="210" height="200" xlink:href=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKhY13rebw8JNfsCXC0kYPYBu5t6jhRSYR7QJblfUhfz4YOLZI&usqp=CAU" clip-path="url(#House)" />
     
-    </svg>   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+    </svg>   <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
       <clipPath id="House">
     
       <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -150,7 +138,7 @@
     
     </svg>  
     
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+    <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
     <clipPath id="House">
     
     <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -163,7 +151,7 @@
     <image  class ="imageinhouse"width="210" height="200" xlink:href=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKhY13rebw8JNfsCXC0kYPYBu5t6jhRSYR7QJblfUhfz4YOLZI&usqp=CAU" clip-path="url(#House)" />
     
     </svg> 
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
+    <svg id="Layer_2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94"><defs>
       <clipPath id="House">
       
       <style>.cls-1{fill:none;stroke:#3c818f;stroke-miterlimit:10;stroke-width:8px;}</style>
@@ -176,8 +164,10 @@
       <image  class ="imageinhouse"width="210" height="200" xlink:href=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKhY13rebw8JNfsCXC0kYPYBu5t6jhRSYR7QJblfUhfz4YOLZI&usqp=CAU" clip-path="url(#House)" />
       
       </svg> 
-    
-    
+          </div>
+
+
+    <div class="allnames">
     
               <!-- Card names -->
             <p class="card-name">Мариja Марковска</p>
@@ -187,8 +177,11 @@
             <p class="card-name">Мариja Марковска</p>
             <p class="card-name">Марко Марковски</p>
             <p class="card-name">Марко Марковски</p>    
+            </div>
+          </div>
+
             
-      <div class="card-rows" id="bbbb">
+      <div class="card-rowss" id="bbbb">
               <div class="cards-columns">
                 <ul class="card-title"> Бесплатен акаунт засекогаш. </ul>
                 <div class="info-cards">
@@ -238,7 +231,6 @@
     
     
     
-            <div class="footer">
               <p class="footer-text">FOLLOW US</p>
               <img src="./style/instagram.svg" class="instagram">
               <img src="./style/facebook.svg" class="facebook">
@@ -248,12 +240,12 @@
     
     
             </div>
-          </div>
           
           </section>
   </div>
 
   <div id="searhCards">
+    <section class="section2" id="section2">
     <header>
       <div class="logo-top-left">
           <img src="./SearchedCardsPage/Images/roommates_logo_white.svg" alt="roommates.mk" class="logo-top-left-image">
@@ -323,7 +315,7 @@
     <div class="wrapper">
       
       
-      <!-- CARDS -->
+      </div>
       
     </div>  
 
@@ -343,23 +335,280 @@
     </nav>
   
 
-  <div class="footer">
-    <div class ="footer-text-follow-us">
-      <p class="footer-text">FOLLOW US</p>
+  <div class="footer2">
+    <div class ="footer-text-follow-us4">
+      <p class="footer-text4">FOLLOW US</p>
     </div>
-    <div class="logo-footer-text-1">
-    <img src="./SearchedCardsPage/Images/instagram.svg" class="instagram">
-    <img src="./SearchedCardsPage/Images/facebook.svg" class="facebook1">
-    <p class="footer-text-1">2020 Roommates.mk</p>
+    <div class="logo-footer-text-4">
+    <img src="./SearchedCardsPage/Images/instagram.svg" class="instagram2">
+    <img src="./SearchedCardsPage/Images/facebook.svg" class="facebook2">
+    <p class="footer-text-2">2020 Roommates.mk</p>
     </div>
-    <div class="footer-text-2-Info">
-      <p class="footer-text-2">Mobile App |Terms |Privacy |Contact </p>
+    <div class="footer-text-4-Info">
+      <p class="footer-text-4">Mobile App |Terms |Privacy |Contact </p>
     </div>
   </div>
 
   </div>
 
-  
+</section>
+
+<section class="section3">
+
+  <div  id="allnajava">
+       <header>
+         <div class="logo-top-left">
+             <img src="./Login-page/roommates_logo_white2.png" alt="roommates.mk" class="logo-top-left-image">
+         </div>
+ 
+ 
+         <nav>
+            
+         </nav> 
+     </header>
+ 
+ 
+     <div class="container">
+         <h1>Добредојде назад! <span class="wave">👋🏾</span></h1>
+     
+         Емаил:
+         <input type="email" />
+     
+         Лозинка:
+         <input type="password" />
+         <a type="button"  class="login">Најави се</a>
+
+         <p class="text-in-najava">Сеуште немаш акаунт?</p>
+         <a onclick="location.href='../registration-page/registration-page.html'" type="button" id="signup" class="signup">Регистрирај се</a>
+         <a href="#">Заборави лозинка...</a>
+         <p class="disclaimer">Со користење на Roomates.mk,се согласуваш дека си ги прочитал и разбрал правилата на употреба....</p>
+       </div>
+   
+     <div class="footer3">
+         <div class ="footer-text-follow-us3">
+           <p class="footer-text3">FOLLOW US</p>
+         </div>
+         <div class="logo-footer-text-3">
+         <img src="./Login-page/instagram.svg" class="instagram3">
+         <img src="./Login-page/facebook.svg" class="facebook3">
+         <p class="footer-text-3">2020 Roommates.mk</p>
+         </div>
+         <div class="footer-text-3-Info">
+           <p class="footer-text-3">Mobile App |Terms |Privacy |Contact </p>
+         </div>
+         </div>
+         </div>
+ 
+         </section>
+
+         <div id="searchApartments">
+          <header>
+            <div class="logo-top-left">
+                <img src="./User.Rent Aparment page/modifaers/Images/Roommates_white-1.jpg" alt="roommates.mk" class="logo-top-left-image">
+            </div>
+    
+    
+            <div class="box"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Совпаѓања</a></li>
+                    <li><a href="#" class="nav-link">Пребарај</a></li>
+                    <li><a href="#" class="nav-link">Пораки</a></li>
+                    <li><a href="#" class="nav-link">Профил</a></li>
+                </ul>
+            </nav>
+            
+            <div class="top-right-user-box">
+              <div class="top-right-house-logo">
+                  <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="user image" class="img-user">
+              </div>
+    
+              <div class="house-icon">
+                <img src="./User.Rent Aparment page/modifaers/images/tirkizna.png" alt="" class="house-icon-image">
+            </div>
+          </div>
+        </header>
+        
+        <div class= "filter-button-div" id="filter-button">
+          
+          <a onclick="filters()" type="button" id="filter" class="kopche-najava"><img src="./User.Rent Aparment page/modifaers/Images/filter- icon.svg" id = "img-filter">Филтри</a>
+      
+        </div>
+    
+        <div id="list">
+          <div class = wrapper>
+
+            <!-- <div class="card card-color-2">
+              <div class="card-house-icon">
+                <img src="/User.Rent Aparment page./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                  <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                <h4 class="card-title-2">Скопје, Карпош</h4>
+                <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-1">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                  <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary girl">Порака</a>
+              </div>
+            </div>
+      
+             <div class="card card-color-1">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                  <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary girl">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-1">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                  <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary girl">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-2">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                  <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-1">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                          <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+      
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary girl">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-2">
+              <div class="card-house-icon">
+                <img src="/User.Rent Aparment page./images/tirkizna.png" alt="" class="card-house-image">
+              </div>
+      
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                <image  class="imageinhouse" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAUclip-path="clip-path = "url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary">Порака</a>
+              </div>
+            </div>
+      
+            <div class="card card-color-1">
+              <div class="card-house-icon">
+                <img src="./prostor/tirkizna.png
+                " alt="" class="card-house-image">
+              </div>
+              
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.89 171.94">
+                <clipPath id="House"> 
+                  <style>.cls-1{fill:none;stroke:none;stroke-miterlimit:10;stroke-width:8px;}</style>
+                  <polygon class="cls-1"  points="9.66 96.25 35.27 96.25 35.27 167.94 167.13 167.94 167.13 96.25 194.01 96.25 100.41 5.61 9.66 96.25"/>
+                </clipPath>
+              <polygon class="cls-1" points="9.66 96.25 35.27 96.25 35.27 167.94 167.13 167.94 167.13 96.25 194.01 96.25 100.41 5.61 9.66 96.25"/>
+              <image  class ="imageinhouse"width="200" height="200" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAU" clip-path="url(#House)" />
+              </svg>
+              
+              <div class="card-body">
+                  <h4 class="card-title-2">Скопје, Карпош</h4>
+                  <span class="card-text-2">Се издава стан</span><br>
+                <a href="#" class="btn btn-primary girl">Порака</a>
+              </div> -->
+              
+            </div>
+            
+                       
+        </div>
+    
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Назад</a></li>
+              <ul class="paging-numbers">
+              <li class="page-item-"><a class="page-link" href="#">1</a></li>
+              <li class="page-item-"><a class="page-link" href="#">2</a></li>
+              <li class="page-item-"><a class="page-link" href="#">3</a></li>
+              <li class="page-item-"><a class="page-link" href="#">4</a></li>
+              </ul>
+              <li class="page-item"><a class="page-link" href="#">Следно</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="footer">
+          <div class ="footer-text-follow-us">
+            <p class="footer-text">FOLLOW US</p>
+          </div>
+          <div class="logo-footer-text-1">
+          <img src="./User.Rent Aparment page/modifaers/Images/instagram.svg" class="instagram">
+          <img src="./User.Rent Aparment page/modifaers/Images/facebook.svg" class="facebook1">
+          <p class="footer-text-1">2020 Roommates.mk</p>
+          </div>
+          <div class="footer-text-2-Info">
+            <p class="footer-text-2">Mobile App |Terms |Privacy |Contact </p>
+          </div>
+          
+          
+          
+    
+        </div>
+         </div>
 
 
 <!-- SCRIPTS -->
@@ -377,8 +626,10 @@
     <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
 <script src="./Jsons/users.json"></script>
     <script src="./style/homepage.js"></script>
-    <script src="SearchedCardsPage/userRepository.js"></script>
     <script src="SearchedCardsPage/searchcards.js"></script>
+    <script src="SearchedCardsPage/userRepository.js"></script>
+    <script src="User.Rent Aparment page/apartmentRepository.js"></script>
+    <script src="./Login-page/najava.js"></script>
 
 
 </body>
