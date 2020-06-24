@@ -11,10 +11,7 @@ let search = document.getElementById("search-btn");
 
 
 let selectLocation = document.getElementById("seconddropdown");
-let selectedLocation = selectLocation.options[selectLocation.selectedIndex].value;
-
 let selectRoomateOrApartment = document.getElementById("firstdropdown");
-let selectedRoomateOrAparment = selectRoomateOrApartment.options[selectRoomateOrApartment.selectedIndex].value;
 
 searchApartments.style.dysplay = 'none';
 searchCards.style.display = 'none';
@@ -31,16 +28,19 @@ function showDivApartment(){
 }
 
 search.addEventListener("click", function(){
+
+    let selectedLocation = selectLocation.options[selectLocation.selectedIndex].value;
+    let selectedRoomateOrAparment = selectRoomateOrApartment.options[selectRoomateOrApartment.selectedIndex].value;
     if(selectedRoomateOrAparment === "true" || selectedRoomateOrAparment === "false"){
         showDivRoomate();
-        pagination();
+        //paginationInitUsers();
         RoomatesDb.getAll();
-        // filterRoomates();
+        //filterRoomates();
     }else{
         showDivApartment();
-        pagination();
+        //paginationInitUsers();
         ApartmentsDb.getAll();
-        // filterApartments();
+        //filterApartments();
     }
     
 });

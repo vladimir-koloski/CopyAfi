@@ -1,7 +1,7 @@
 let searchApatments = document.getElementById("search-btn-cardss");
 let cardsApartmentsDiv = document.getElementsByClassName("wrapper")[0];
 
-let aparmentsList = [];
+let apartmentsList = [];
 
 
 let ApartmentsDb = {
@@ -24,7 +24,7 @@ let ApartmentsDb = {
               // console.log(selectedRoomateOrAparment);
               // console.log(apartments[0].apartment[0].region);
               apartmentsList = filterApartments(data, selectedLocation, selectedRoomateOrAparment);
-              pagination();         
+              paginationInitUsers();         
               
               
             })
@@ -43,9 +43,9 @@ function filterApartments(apartments, selectedLocation){
 ApartmentsDb.getAll();
 
 
-function pagination (){
+function paginationInitUsers (){
   $('#list').pagination({
-    dataSource: aparmentsList,
+    dataSource: apartmentsList,
     pageSize: 8,
     callback: function(data, pagination) {                    
         console.log(data, "pagination");
@@ -81,4 +81,4 @@ function pagination (){
 
 //setTimeout(function(){console.log(roomates)}, 10000);
 
-console.log(aparmentsList);
+console.log(apartmentsList);

@@ -21,7 +21,7 @@ let RoomatesDb = {
               console.log(String(data[0].preferences.doYouHaveSpace));
               roomatesList = filterRoomates(data, selectedLocation, selectedRoomateOrAparment);
               console.log(roomatesList, "filtered list ");
-              pagination();                    
+              paginationInitUsers();                    
             })
             .catch(error => console.log(error));
     },
@@ -39,7 +39,7 @@ function filterRoomates(roomates, selectedLocation, selectedRoomateOrAparment){
 
 
 
-function pagination (){
+function paginationInitUsers (){
   $('#list').pagination({
     dataSource: roomatesList,
     pageSize: 8,
