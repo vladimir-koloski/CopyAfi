@@ -16,15 +16,15 @@ let ApartmentsDb = {
               let selectedLocation =document.getElementById("seconddropdown").options[selectLocation.selectedIndex].value;
               // let selectedLocation =document.getElementById("seconddropdown").value;
               // console.log(selectLocation, "selected location")
-              let a = $("#seconddropdown option:selected").text();
-              console.log(a, "selected option")
+              
+              console.log(selectedLocation);
               
               let selectedRoomateOrAparment =document.getElementById("firstdropdown").options[selectRoomateOrApartment.selectedIndex].value;
               // console.log(selectedLocation);
               // console.log(selectedRoomateOrAparment);
               // console.log(apartments[0].apartment[0].region);
               apartmentsList = filterApartments(data, selectedLocation, selectedRoomateOrAparment);
-              paginationInitUsers();         
+              paginationInitApartments();         
               
               
             })
@@ -33,17 +33,18 @@ let ApartmentsDb = {
 };
 
 function filterApartments(apartments, selectedLocation){
-  return apartments.filter(a => {
-    console.log(selectedLocation, a.apartment[0].region)
-   selectedLocation === a.apartment[0].region;
-  }  
-    
-  );  
+  if(selectedLocation !== "all"){
+    return apartments.filter(a => {
+      console.log(selectedLocation, a.apartment[0].region)
+     selectedLocation === a.apartment[0].region;
+    });    
+  }
+  return apartments;
 }
-ApartmentsDb.getAll();
+// ApartmentsDb.getAll();
 
 
-function paginationInitUsers (){
+function paginationInitApartments (){
   $('#list').pagination({
     dataSource: apartmentsList,
     pageSize: 8,
@@ -65,11 +66,11 @@ function paginationInitUsers (){
                <polygon class="cls-1"  points="9.66 96.25 35.27 96.25 35.27 167.94 167.13 167.94 167.13 96.25 194.01 96.25 100.41 5.61 9.66 96.25"/>
              </clipPath>
            <polygon class="cls-1" points="9.66 96.25 35.27 96.25 35.27 167.94 167.13 167.94 167.13 96.25 194.01 96.25 100.41 5.61 9.66 96.25"/>
-           <image  class ="imageinhouse"width="200" height="200" xlink:href=${apartment.user.pictures[0]}" clip-path="url(#House)" />
+           <image  class ="imageinhouse"width="200" height="200" xlink:href="${apartment.pictures[0]}" clip-path="url(#House)" />
            </svg>            
              <div class="card-body">
-             <h4 class="card-title-2">${apartment.user.apartment.region}</h4>
-             <span class="card-text-2">${apartment.user.apartment.price} ЕУР</span><br>
+             <h4 class="card-title-2">${apartment.apartment[0].region}</h4>
+             <span class="card-text-2">${apartment.apartment[0].price} ЕУР</span><br>
                <a href="#" class="btn btn-primary">Порака</a>
              </div>
            </div>`);         
@@ -81,4 +82,4 @@ function paginationInitUsers (){
 
 //setTimeout(function(){console.log(roomates)}, 10000);
 
-console.log(apartmentsList);
+// console.log(apartmentsList);
